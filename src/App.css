@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    color:#fff;
+    min-height: 100vh;
+    /* background:rgba(137, 137, 137, 0.612); */
+background-image: linear-gradient(30deg, #7922c1 , #e4088c,rgb(247, 255, 13));    display: grid;
+place-content: center;
+/* background: url('../public/asset/bg.jpg');
+background-repeat: no-repeat;
+background-size: cover; */
+background-position: center center;
+
+}
+.container{
+    /* max-width: 800px; */
+    width: clamp(350px,80vw,800px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+}
+.todoform form{
+     width:80vw;
+    max-width: 800px;
+    place-content: center;
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.067);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    grid-auto-flow: row;
+    gap:15px;
+}
+@media(max-width:750px){
+    .todoform form{
+        grid-template-columns: 90%;
+    }
+}
+.todoinput{
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid rgb(0, 175, 90);
+    /* border-radius: 8px; */
+    /* height:2.5em; */
+    padding:10px 15px;
+    color:#fff;
+    outline: none;
+    font-size: 1.3em;
+}
+.todoinput::placeholder{
+   color:rgba(255, 255, 255, 0.342);
+}
+.btn{
+    padding: 8px 12px;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    color:#fff;
+    font-size: .8em !important;
+    transition: .2s opacity;
+}
+.btn:hover{
+    opacity: .8;
+}
+.todobtn{
+    background-color: rgb(3, 143, 73);
+}
+
+.deletebtn{
+    background-color: #ea2d3f;
+}
+
+.todolist{
+    background:rgba(88, 88, 88, 0.107);
+    backdrop-filter: blur(8px);
+    width: clamp(350px,80vw,800px);
+    /* max-width: 800px; */
+    padding: 2em clamp(10px,5vw,4em) ;
+    border-radius: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow:2px 2px 12px -1px rgba(0, 0, 0, 0.147);
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 12px;
+    background-color: rgba(201, 201, 201, 0.227);
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 1.2em;
+}
+.list .text{
+    width:72%;
+    position: relative;
+}
+.list .text .underline{
+    display: block;
+    height:2px;
+    background-color: #2dcc5a;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transform: scaleX(0);
+    transition: .3s transform;
+    margin-top: 2px;
+}
+.list .text input{
+    background-color: transparent;
+    border: 0; 
+   outline: 0;
+    width:100%;
+    font-size: 1.3em;
+        color:#fff;
+
+}
+.list .text input:focus ~.underline{
+      transform: scaleX(1);
+}
+.nodata{
+    text-align: center;
+    text-transform: uppercase;
+    font-size:1.3em;
+
+}
+.editbtn{
+   background-color: orange;
+   margin-right: 10px;
+}
