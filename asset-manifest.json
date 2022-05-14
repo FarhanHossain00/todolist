@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FarhanHossain00.github.io/todolist/static/css/main.112aca10.css",
+    "main.js": "/FarhanHossain00.github.io/todolist/static/js/main.e3d28092.js",
+    "index.html": "/FarhanHossain00.github.io/todolist/index.html",
+    "main.112aca10.css.map": "/FarhanHossain00.github.io/todolist/static/css/main.112aca10.css.map",
+    "main.e3d28092.js.map": "/FarhanHossain00.github.io/todolist/static/js/main.e3d28092.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.112aca10.css",
+    "static/js/main.e3d28092.js"
+  ]
+}
